@@ -1,0 +1,7 @@
+Input=main_SSP2-NPi-calibrate.gms
+Action=C
+ScrDir=225a
+SysDir=/p/system/packages/gams/43.4.1
+ScriptNext=225a/gamsnext.sh
+LogOption=2
+DumpOpt=21

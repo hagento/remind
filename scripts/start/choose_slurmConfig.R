@@ -51,7 +51,7 @@ choose_slurmConfig <- function(identifier = FALSE, flags = NULL) {
       if (all(identifier == "") && ! is.null(default)) identifier <- default
     }
     comp <- switch(as.integer(identifier),
-                    "1" = "--qos=standby --nodes=1 --tasks-per-node=12"  , # SLURM standby  - task per node: 12 (nash H12) [recommended]
+                    "1" = "--qos=standby --nodes=1 --tasks-per-node=12 --partition=priority"  , # SLURM standby  - task per node: 12 (nash H12) [recommended]
                     "2" = "--qos=standby --nodes=1 --tasks-per-node=13"  , # SLURM standby  - task per node: 13 (nash H12 coupled)
                     "3" = "--qos=standby --nodes=1 --tasks-per-node=16"  , # SLURM standby  - task per node: 16 (nash H12+)
                     "4" = "--qos=standby --nodes=1 --tasks-per-node=1 --mem=8000"   , # SLURM standby  - task per node:  1 (nash debug, test one regi)

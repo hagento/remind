@@ -109,7 +109,7 @@ forcing_SSP5
 /
 
 all_rcp_scen   "all possible RCP scenarios"
-/none,rcp20,rcp26,rcp37,rcp45,rcp60,rcp85/
+/none,rcp19,rcp20,rcp26,rcp37,rcp45,rcp60,rcp70,rcp85/
 
 all_delayPolicy   "all possible SPA policy choices"
 /
