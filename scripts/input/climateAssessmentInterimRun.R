@@ -111,7 +111,8 @@ runTimes <- c(runTimes, "write_gdx start" = Sys.time())
 # Map climate assessment variables to REMIND/GAMS
 varmap <- c(
   'Surface Air Temperature Change'            = 'pm_globalMeanTemperature',
-  'Effective Radiative Forcing|Anthropogenic' = 'p15_forc_magicc'
+  'Effective Radiative Forcing|Anthropogenic' = 'p15_forc_magicc',
+  'Atmospheric Concentrations|CO2'            = 'p15_co2_conc'
 )
 
 # No need to postprocess, which mainly consisted of renaming variables anyway. Skip renaming variables since during
