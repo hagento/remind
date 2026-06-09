@@ -1652,7 +1652,7 @@ pm_fedemand(tall,all_regi,in) = f_fedemand(tall,all_regi,"%cm_demScen%",in);
 pm_fedemand(tall,all_regi,ppfen_no_ces_use) = f_fedemand(tall,all_regi,"%cm_demScen%",ppfen_no_ces_use);
 
 *** RCP-dependent demands in buildings (climate impact)
-$ifthen.cm_rcp_scen_build not "%cm_rcp_scen_build%" == "none"
+$ifthen.cm_rcp_scen_build (not "%cm_rcp_scen_build%" == "none") OR ("%cm_climateCorrection%" == "on")
 Parameter f_fedemand_build(tall,all_regi,all_demScen,all_rcp_scen,all_in) "RCP-dependent final energy demand in buildings"
 /
 $ondelim
